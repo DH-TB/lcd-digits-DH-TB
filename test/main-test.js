@@ -1,19 +1,89 @@
-describe('LCD', function() {
-  var inputs;
-  var string;
-  beforeEach(function(){
-    string = givenString();
-    inputs = 910;
-  });
+describe('LCD', function () {
+    var inputs;
+    var allLcds;
 
-  it(' print correct text', function () {
-      spyOn(console, 'log');
-      printLCD(inputs);
-    var expectText =
-          '._. ' + '... ' + '._. '+'\n'+
-          '|_| ' + '..| ' + '|.| '+'\n'+
-          '..| ' + '..| ' + '|_| '+'\n';
+    beforeEach(function () {
+        allLcds = loadAllLcds();
+        inputs = 910;
+    });
 
-    expect(console.log).toHaveBeenCalledWith(expectText);
-  });
+    it(' print correct text', function () {
+
+        spyOn(console, 'log');
+
+        printLCD(inputs);
+
+        var expectText =
+            '._. ' + '... ' + '._. ' + '\n' +
+            '|_| ' + '..| ' + '|.| ' + '\n' +
+            '..| ' + '..| ' + '|_| ' + '\n';
+
+        expect(console.log).toHaveBeenCalledWith(expectText);
+    });
+});
+
+describe("unit test",function(){
+    describe('buildLcd', function () {
+        var inputs;
+        var allLcds;
+
+        beforeEach(function () {
+            allLcds = loadAllLcds();
+            inputs = 910;
+        });
+
+        it(' print correct text', function () {
+
+            var expectText = [
+                {value:['._.','|_|','..|']},
+                {value:['...','..|','..|']},
+                {value:['._.','|.|','|_|']}
+            ];
+
+            expect(buildLcd(inputs,allLcds)).toEqual(expectText);
+        });
+    });
+    describe('buildLcd', function () {
+        var inputs;
+        var allLcds;
+
+        beforeEach(function () {
+            allLcds = loadAllLcds();
+            inputs = 9108;
+        });
+
+        it(' print correct text', function () {
+
+            var expectText = [
+                {value:['._.','|_|','..|']},
+                {value:['...','..|','..|']},
+                {value:['._.','|.|','|_|']},
+                {value:['._.','|_|','|_|']}
+            ];
+
+            expect(buildLcd(inputs,allLcds)).toEqual(expectText);
+        });
+    });
+
+    describe('buildLcdText', function () {
+        var inputs;
+
+        beforeEach(function () {
+            inputs = [
+                {value:['._.','|_|','..|']},
+                {value:['...','..|','..|']},
+                {value:['._.','|.|','|_|']}
+            ];
+        });
+
+        it(' print correct text', function () {
+
+            var expectText = '._. ' + '... ' + '._. ' + '\n' +
+                '|_| ' + '..| ' + '|.| ' + '\n' +
+                '..| ' + '..| ' + '|_| ' + '\n';
+
+            expect(buildLcdText(inputs)).toEqual(expectText);
+        });
+    });
+
 });
