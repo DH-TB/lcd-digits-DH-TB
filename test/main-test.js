@@ -23,6 +23,7 @@ describe('LCD', function () {
 });
 
 describe("unit test",function(){
+
     describe('buildLcd', function () {
         var inputs;
         var allLcds;
@@ -85,5 +86,4 @@ describe("unit test",function(){
             expect(buildLcdText(inputs)).toEqual(expectText);
         });
     });
-
 });

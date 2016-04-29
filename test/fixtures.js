@@ -11,4 +11,5 @@ function loadAllLcds() {
       {num:8, value:['._.','|_|','|_|']},
       {num:9, value:['._.','|_|','..|']}
     ];
+
 };

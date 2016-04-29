@@ -2,7 +2,8 @@ function printLCD(inputs) {
     var allLcds= loadAllLcds();
     var lcds = buildLcd(inputs,allLcds);
     var lcdText = buildLcdText(lcds);
-    console.log(lcdText);
+    console.log(lcdText)
+
 }
 
 function find(input, allLcds) {

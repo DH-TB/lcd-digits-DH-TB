@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92c2bebf-0dab-4573-9cf7-8020928544a2" name="Default" comment="" />
+    <list default="true" id="92c2bebf-0dab-4573-9cf7-8020928544a2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/main.js" afterPath="$PROJECT_DIR$/main/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures.js" afterPath="$PROJECT_DIR$/test/fixtures.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/main-test.js" afterPath="$PROJECT_DIR$/test/main-test.js" />
+    </list>
     <ignored path="lcd-digits-DH-TB.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -35,19 +39,20 @@
         <entry file="file://$PROJECT_DIR$/test/fixtures.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-test.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main-test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/main-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.25">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding>
-                <element signature="e#569#1035#0" expanded="false" />
+                <element signature="e#570#1036#0" expanded="false" />
+                <element signature="e#1076#1588#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -83,9 +88,9 @@
       <list>
         <option value="$PROJECT_DIR$/run.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/test/main-test.js" />
-        <option value="$PROJECT_DIR$/test/fixtures.js" />
         <option value="$PROJECT_DIR$/main/main.js" />
+        <option value="$PROJECT_DIR$/test/fixtures.js" />
+        <option value="$PROJECT_DIR$/test/main-test.js" />
       </list>
     </option>
   </component>
@@ -156,6 +161,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lcd-digits-DH-TB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lcd-digits-DH-TB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,7 +344,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
-            <element signature="e#569#1035#0" expanded="false" />
+            <element signature="e#570#1036#0" expanded="false" />
+            <element signature="e#1076#1588#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -367,7 +387,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <element signature="e#569#1035#0" expanded="false" />
+            <element signature="e#570#1036#0" expanded="false" />
+            <element signature="e#1076#1588#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -409,7 +430,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#569#1035#0" expanded="false" />
+            <element signature="e#570#1036#0" expanded="false" />
+            <element signature="e#1076#1588#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -451,7 +473,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
-            <element signature="e#569#1035#0" expanded="false" />
+            <element signature="e#570#1036#0" expanded="false" />
+            <element signature="e#1076#1588#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -493,7 +516,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <element signature="e#569#1035#0" expanded="false" />
+            <element signature="e#570#1036#0" expanded="false" />
+            <element signature="e#1076#1588#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -538,29 +562,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/main-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.25">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <element signature="e#569#1035#0" expanded="false" />
+            <element signature="e#570#1036#0" expanded="false" />
+            <element signature="e#1076#1588#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
