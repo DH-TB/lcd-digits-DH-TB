@@ -1,17 +1,41 @@
 function printLCD(inputs) {
-    var string = givenString();
-    console.log(buildLCD(inputs,string));
+    var allLcds= loadAllLcds();
+    var lcds = buildLcd(inputs,allLcds);
+    var lcdText = buildLcdText(lcds);
+    console.log(lcdText);
 }
 
-function buildLCD(inputs,string) {
-    var stringText = '';
-    var input =inputs.toString();
-    var arr = input.split("");
-    for(var j = 0;j < 3;j++) {
-        for(var i = 0;i < arr.length;i++) {
-            stringText += string[j][parseInt(arr[i])] + ' ';
+function find(input, allLcds) {
+    for(var i = 0;i < allLcds.length;i++) {
+        var allLcd = allLcds[i];
+        if(allLcd.num == input) {
+
+            return allLcd.value;
         }
-        stringText += '\n';
     }
-    return stringText;
+}
+
+function buildLcd(inputs, allLcds) {
+    var inputs = inputs.toString().split("");
+    var lcds = [];
+
+    inputs.forEach(function (input) {
+        var lcd = find(input,allLcds);
+        lcds.push({value:lcd});
+    });
+
+    return lcds;
+}
+
+function buildLcdText(lcds) {
+    var lcdText = '';
+
+    for(var i = 0;i < 3;i++) {
+        lcds.forEach(function (lcd) {
+            lcdText += lcd.value[i] + ' ';
+        });
+        lcdText += '\n';
+    }
+
+    return lcdText;
 }
