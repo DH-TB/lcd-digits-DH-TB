@@ -1,15 +1,14 @@
 function printLCD(inputs) {
-    var allLcds= loadAllLcds();
-    var lcds = buildLcd(inputs,allLcds);
+    var allLcds = loadAllLcds();
+    var lcds = buildLcd(inputs, allLcds);
     var lcdText = buildLcdText(lcds);
     console.log(lcdText)
-
 }
 
 function find(input, allLcds) {
-    for(var i = 0;i < allLcds.length;i++) {
+    for (var i = 0; i < allLcds.length; i++) {
         var allLcd = allLcds[i];
-        if(allLcd.num == input) {
+        if (allLcd.num == input) {
 
             return allLcd.value;
         }
@@ -21,8 +20,8 @@ function buildLcd(inputs, allLcds) {
     var lcds = [];
 
     inputs.forEach(function (input) {
-        var lcd = find(input,allLcds);
-        lcds.push({value:lcd});
+        var lcd = find(input, allLcds);
+        lcds.push({value: lcd});
     });
 
     return lcds;
@@ -31,7 +30,7 @@ function buildLcd(inputs, allLcds) {
 function buildLcdText(lcds) {
     var lcdText = '';
 
-    for(var i = 0;i < 3;i++) {
+    for (var i = 0; i < 3; i++) {
         lcds.forEach(function (lcd) {
             lcdText += lcd.value[i] + ' ';
         });
