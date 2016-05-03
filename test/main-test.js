@@ -72,22 +72,17 @@ describe("unit test",function(){
         });
     });
 
-
-
     describe('buildLcdText', function () {
-        var inputs;
-
-        beforeEach(function () {
-            inputs = [
+        var inputs = [
                 {value:['._.','|_|','..|']},
                 {value:['...','..|','..|']},
                 {value:['._.','|.|','|_|']}
             ];
-        });
 
         it(' print correct text', function () {
 
-            var expectText = '._. ' + '... ' + '._. ' + '\n' +
+            var expectText =
+                '._. ' + '... ' + '._. ' + '\n' +
                 '|_| ' + '..| ' + '|.| ' + '\n' +
                 '..| ' + '..| ' + '|_| ' + '\n';
 

@@ -11,6 +11,7 @@ function printLCD(inputs) {
 
 function buildInputs(inputs) {
     var inputs = inputs.toString().split("");
+
     return inputs;
 }
 
