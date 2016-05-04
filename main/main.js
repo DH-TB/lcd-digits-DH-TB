@@ -10,15 +10,13 @@ function printLCD(inputs) {
 }
 
 function buildInputs(inputs) {
-    var inputs = inputs.toString().split("");
-
-    return inputs;
+    return  inputs.toString().split("");
 }
 
 function find(input, allLcds) {
     for (var i = 0; i < allLcds.length; i++) {
         var allLcd = allLcds[i];
-        if (allLcd.num == input) {
+        if (allLcd.num === input) {
 
             return allLcd.value;
         }
