@@ -10,7 +10,7 @@ function printLCD(inputs) {
 }
 
 function buildInputs(inputs) {
-    return  inputs.toString().split("");
+    return inputs.toString().split("");
 }
 
 function find(input, allLcds) {
@@ -24,7 +24,6 @@ function find(input, allLcds) {
 }
 
 function buildLcd(inputs, allLcds) {
-
     var lcds = [];
 
     inputs.forEach(function (input) {
